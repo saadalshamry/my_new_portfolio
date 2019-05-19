@@ -1,0 +1,211 @@
+*{
+    font-family: 'Open Sans', sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+}
+.container {
+    max-width: 1125px;
+    margin: auto;
+}
+/* Header Section */
+header {
+   width: 100%;
+   height: 100%;
+   background-color: #7A4CFB;
+   position: relative;
+}
+nav {
+    display: flex;
+    width: 100%;
+    padding-top: 30px;
+}
+nav ul {
+    display: flex;
+    margin-left: auto;
+}
+nav li {
+    list-style: none;
+    margin: auto 20px;
+}
+nav li a {
+    color: #fff;
+    text-decoration: none;
+} 
+#brand {
+    font-size: 25px;
+    font-weight: bold;
+    color: #fff;
+    align-self: flex-start;
+}
+.avatar  {
+   position: absolute;
+   right: 100px;
+   bottom: 0px;
+   max-width: 50%;
+}
+.intro {
+    margin-top: 300px;
+    margin-left: 90px;
+}
+.intro h1 {
+    color: #fff;
+    font-weight: bolder;
+    font-size: 60px;
+}
+.intro h5 {
+    color: #fff;
+    font-weight: lighter;
+    font-size: 20px;
+}
+.main-btn {
+    display: block;
+    min-width: 190px;
+    background-color: #510692;
+    border: none;
+    padding: 15px;
+    font-size: 20px;
+    color: #fff;
+    border-radius: 100px;
+    margin-top: 15px;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.main-btn:hover {
+    -webkit-box-shadow: 0px 0px 15px 0px rgba(83,28,110,0.55);
+    -moz-box-shadow: 0px 0px 15px 0px rgba(83,28,110,0.55);
+    box-shadow: 0px 0px 15px 0px rgba(83,28,110,0.55);
+}
+.main-btn:active {
+    transform: translateY(5px)
+}
+.skills h1 {
+    text-align: center;
+    padding-top: 100px;
+}
+
+.skills table {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+    margin-top: 30px;
+    border: 1px solid #7A4CFB;
+    -webkit-box-shadow: 0px 0px 21px -6px rgba(0,0,0,0.79);
+    -moz-box-shadow: 0px 0px 21px -6px rgba(0,0,0,0.79);
+    box-shadow: 0px 0px 21px -6px rgba(0,0,0,0.79);
+}
+.skills th {
+    background-color: #7A4CFB;
+    padding: 20px;
+    color: #fff;
+    width: 33%;
+}
+.skills td {
+    border-bottom:1px solid  #ddd;
+    padding: 15px;
+    color: #6b6b6b;
+}
+.skills img {
+    width: 100%;
+    margin-top: 50px;
+}
+/* Projects */
+.projects {
+    background-color: rgb(107, 88, 163);
+    padding-bottom: 20px;
+}
+.projects h1 {
+    color: #fff;
+    text-align: center;
+    padding-top: 30px;
+    margin-bottom: 40px;
+}
+.projects h3 {
+    color: #fff;
+    margin: 20px auto;
+}
+.projects img {
+    width: 100%;
+    -webkit-box-shadow: 0px 0px 21px -6px rgba(0,0,0,0.79);
+    -moz-box-shadow: 0px 0px 21px -6px rgba(0,0,0,0.79);
+    box-shadow: 0px 0px 21px -6px rgba(0,0,0,0.79);
+    border-radius: 5px;
+}
+.projects p {
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: left;
+    margin-top: 20px;
+    line-height: 30px;
+}
+
+/* Contact Me */
+.contact h1 {
+    color: #444;
+    text-align: center;
+    padding-top: 20px;
+    margin-bottom: 40px;
+}
+.contact form {
+    width: 100%;
+}
+.contact input, .contact textarea {
+  display: block;
+  padding: 10px;
+  border: 1px solid #eee;
+  resize: none;
+  width: 50%;
+  margin: 10px auto;
+  outline: none;
+  font-family:'Open Sans', sans-serif;
+  box-sizing: border-box;
+  -webkit-box-shadow: 0px 0px 21px -12px rgba(0,0,0,0.49);
+  -moz-box-shadow: 0px 0px 21px -12px rgba(0,0,0,0.49);
+  box-shadow: 0px 0px 21px -12px rgba(0,0,0,0.49);
+
+}
+.contact textarea {
+    min-height: 200px;
+}
+.contact .main-btn {
+    margin: auto;
+    padding: 5px;
+}
+/* Footer */
+footer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 13px;
+    color: #6b6b6b;
+    padding: 10px 0;
+}
+/* Responsive design */
+@media only screen and (max-width: 1160px) {
+    .projects {
+         padding: 10px;
+    }
+    #brand {
+        padding: 10px;
+    }
+  }
+@media only screen and (max-width: 1000px) {
+    
+    .intro h1 {
+        font-size: 30px;
+    }
+    .intro {
+        margin-top: 90px;
+    }
+  }
+@media only screen and (max-width: 500px) {
+    
+   nav {
+       flex-direction: column;
+   }
+  }
